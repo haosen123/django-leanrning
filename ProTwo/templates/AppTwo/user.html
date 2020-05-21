@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "AppTwo/base.html" %}
+  {% block body_block %}
+    <form method="post">
+    <h1>Registration</h1>
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Submit">
+    </form>
+  {% endblock %}
+
+
+
+<!-- present table
+{% if user_table %}
+  <table>
+    <thead>
+      <th>First name</th>
+      <th>Second Name</th>
+      <th>email</th>
+    </thead>
+    {% for row in user_table %}
+      <tr>
+        <td>{{ row.first_name }}</td>
+        <td>{{ row.second_name }}</td>
+        <td>{{ row.email }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>Sorry, there is no user list here</p>
+{% endif %} -->

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "AppTwo/base.html" %}
+  {% block body_block %}
+    <h1>This is my Index!</h1>
+    <ul>
+      <li><a href="{% url 'AppTwo:help' %}">help page</a></li>
+      <li><a href="{% url 'AppTwo:users' %}">User List Page</a></li>
+      <li><a href="{% url 'AppTwo:userprofile' %}">User Profile Page</a></li>
+    </ul>
+  {% endblock %}

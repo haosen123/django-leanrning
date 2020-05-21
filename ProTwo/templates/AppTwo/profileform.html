@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "AppTwo/base.html" %}
+  {% block body_block %}
+    <h1>Please fill up the profile form</h1>
+    <form method="post">
+      {{ profileform.as_p }}
+      {% csrf_token %}
+      <input type="submit" value="Submit">
+    </form>
+  {% endblock %}
